@@ -1,0 +1,227 @@
+body{
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, nav, ul.contact-phone{
+    font-family: 'Oranienbaum', serif;
+}
+.container, .col, .col-1, .col-3, .col-5, .col-8, .col-4, .col-7, .col-2, .col-12{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+}
+header{
+    color: #fff;
+    min-height: 666px;
+    background: url(../img/bg-main.png) center 0px no-repeat;
+
+}
+nav{
+text-transform: uppercase;   
+    ul{
+        li{
+            margin-right: 1rem !important;
+            a{
+                color: #fff;
+                font-size: 1.2rem;
+                
+                &:hover{                
+                    color: #c6b58a;
+                }
+            }
+        }
+    }
+}
+.contact-social{
+    li{
+        margin-right: 0 !important;
+        
+        a{
+            div{
+                width: 25px;
+                height: 25px;
+                &.fb{
+                    background: url(../img/fb.png);
+                    &:hover{
+                        background: url(../img/fb.png) 0 50px;
+                    }
+                }
+                &.vk{
+                    background: url(../img/vk.png);
+                    &:hover{
+                        background: url(../img/vk.png) 0 50px;
+                    }
+                }
+                &.inst{
+                    background: url(../img/inst.png);
+                    &:hover{
+                        background: url(../img/inst.png) 0 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ul.contact-phone{
+    list-style-type: none;
+    li{
+        span{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+h6{
+    color: #c6b58a;
+    text-decoration: underline;
+}
+main{
+    position: relative;
+    &:before{
+        text-align: center;
+        color: #fff;
+        display: block;
+        width: 170px;
+        height: 35px;
+        line-height: 35px;
+        background-color: red;
+        position: absolute;
+        top: 29px;
+        left: -38px;
+        content: 'Новинка';
+        z-index: 100;    
+        transform: rotate(315deg);    
+        clip-path: polygon(21% 0, 79% 0, 100% 100%, 0% 100%);
+    }
+    & > *{
+        background-color: #fff;
+    }
+}
+
+.caption{
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+}
+.bigcolor{
+    width: 100%;
+}
+p{
+    font-size: 110%;
+    font-weight: 100;
+}
+table{
+    ul{
+        li{
+            height: 35px;
+            width: 35px;
+            border: 1px solid #000;
+            padding: 5px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    span.small-text{
+        font-size: 75%;
+        line-height: 50%;
+    }
+}
+.services{
+    h3{
+        font-family: 'Roboto', sans-serif;
+        text-transform: capitalize;
+        .small-text{
+            font-size: 75%;
+        }
+    }
+    &>div{
+        border: 3px solid #e8e8e8; 
+        &:hover{
+            -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        }       
+    }
+    p{
+        padding: 0 50px;
+        display: block;
+        text-align: left;
+    }
+    span{
+        font-size: 125%;
+        font-weight: 100;
+        &.price-old{
+            position: relative;
+            &:before{
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: -5px;
+                content: '';
+                width: 60px;
+                height: 1px;
+                border: 1px solid #ba495d;
+                transform: rotate(350deg);
+            }
+        }
+        &.price-current{
+            font-weight: bold;
+            font-size: 150%;
+        }
+    }
+}
+.howitworks{
+    img{
+        width: 50%;
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        text-transform: none;
+        font-weight: 300;
+    }
+}
+
+footer{
+    .totop{
+        display: block;
+        border: 1px solid #fff;
+        width: 90px;
+        padding: 10px 12px 10px 15px;
+        margin: 0 auto;
+        color: #fff;
+        font-weight: 100;
+        font-size: 75%;
+        text-align: left;
+        background: url('../img/arrow.jpg') no-repeat 60px 13px ;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .info{
+        color: #fff;
+        font-size: 75%;
+        p{
+            padding-bottom: 0;
+            margin-bottom: 5px;
+        }
+        a{
+            color: #fff;
+        }
+    }
+}
+.always-on-top{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    z-index: 101;
+}
